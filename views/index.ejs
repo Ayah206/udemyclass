@@ -1,0 +1,17 @@
+<html ng-app = "TestApp">
+    <head>
+        <title>A for angular</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.0/angular.js"></script>
+    </head>
+    <body ng-controller = "MainController as vm">
+        <script>
+            var usercontrol = <%- JSON.stringify(userquote) %>
+        </script>
+        <ul>
+            <li ng-repeat = "quote in vm.quotes">
+                {{quote.word}}
+            </li>
+        </ul>
+        <script src="/assets/js/app.js"></script>
+    </body>
+</html>
